@@ -22,6 +22,7 @@ Nagato-Sakura-Image-Quality-Classification 是「長門櫻計畫」的其中一�
 - 【更新】改善了訓練效率並優化了模型的損失函數。
 ### 已知問題
 - N/A
+
 [所有發行版本](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/blob/main/assets/docs/Changelog.md)
 
 ## 快速開始
