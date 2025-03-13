@@ -1,0 +1,5 @@
+torch
+torchvision
+Pillow
+scikit-learn
+py-cpuinfo
