@@ -1,20 +1,31 @@
-# Nagato-Sakura-Image-Quality-Classification
+# Nagato-Sakura-Image-Quality-Assessment
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification?style=social)](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/stargazers)
-[![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification)](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/commits/main)
-[![GitHub release](https://img.shields.io/github/v/release/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification)](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/releases)
+[![GitHub Repo stars](https://img.shields.io/github/stars/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment?style=social)](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/stargazers)
+[![GitHub last commit](https://img.shields.io/github/last-commit/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment)](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/commits/main)
+[![GitHub release](https://img.shields.io/github/v/release/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment)](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/releases)
 
-\[ 中文 | [English](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/blob/main/assets/docs/README_en.md) | [日本語](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/blob/main/assets/docs/README_jp.md) \]
+\[ 中文 | [English](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/blob/main/assets/docs/README_en.md) | [日本語](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/blob/main/assets/docs/README_jp.md) \]
 
 ## 簡介
-Nagato-Sakura-Image-Quality-Classification 是「長門櫻計畫」的其中一個分支，是用來進行圖像品質評估的 AI 圖像評分程式。
+Nagato-Sakura-Image-Quality-Assessment 是「長門櫻計畫」的其中一個分支，是用來進行圖像品質評估的 AI 圖像評分程式。
 
 ## 公告
-更改了模型架構，使用 Transformer 模型取代了以前的 CNN 模型。
+重新修改了倉庫配置並新增預設模型，針對「長門櫻-影像魅影」進行適配。
 
 ## 近期變動
+### 2.0.0 (2025 年 8 月 10 日)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/blob/main/assets/preview/2.0.0.jpg)
+### 重要變更
+- 【重大】更改了倉庫名從 Nagato-Sakura-Image-Quality-Classification 改為 Nagato-Sakura-Image-Quality-Assessment。
+- 【重大】更改了模型架構，使用輕量化的 CNN 2代模型取代了肥大的 Transformer 模型。
+- 【重大】修改倉庫配置新增預設模型，針對「長門櫻-影像魅影」擴充插件進行適配。
+### 新增功能
+- 【新增】圖形化操作介面(GUI)，方便快速選擇模型、批量處裡圖片。
+### 已知問題
+- N/A
+
 ### 1.0.0 (2025 年 3 月 13 日)
-![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/blob/main/assets/preview/1.0.0.jpg)
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/blob/main/assets/preview/1.0.0.jpg)
 ### 重要變更
 - 【重大】首個正式發行版本，使用 Transformer 模型取代了以前的 CNN 模型。
 ### 新增功能
@@ -23,7 +34,7 @@ Nagato-Sakura-Image-Quality-Classification 是「長門櫻計畫」的其中一�
 ### 已知問題
 - N/A
 
-[所有發行版本](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/blob/main/assets/docs/Changelog.md)
+[所有發行版本](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/blob/main/assets/docs/Changelog.md)
 
 ## 快速開始
 > [!NOTE]
@@ -45,24 +56,23 @@ Nagato-Sakura-Image-Quality-Classification 是「長門櫻計畫」的其中一�
 > [!IMPORTANT]
 > 此為必要步驟。
 ```shell
-git clone https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification.git
-cd Nagato-Sakura-Image-Quality-Classification
+git clone https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment.git
+cd Nagato-Sakura-Image-Quality-Assessment
 pip install -r requirements.txt
-```
-- 訓練前置準備
-```shell
-python data_processor.py
 ```
 
 - 開始訓練
 ```shell
-python train_transformer.py
+python train.py
 ```
 
-- 開始測試
+- 開始測試 (GUI)
 ```shell
-python test_transformer.py + 圖片路徑
+python test.py
 ```
+
+## GUI 介面
+![t2i](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/blob/main/assets/samples/GUI_v2.0.0.png)
 
 ## 待辦事項
 N/A
@@ -70,8 +80,9 @@ N/A
 ## 致謝
 特別感謝以下項目和貢獻者：
 ### 項目
-N/A
+- [Nagato-Sakura-Image-Charm](https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Charm)
+
 ### 貢獻者
-<a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification/graphs/contributors" target="_blank">
-  <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Image-Quality-Classification" />
+<a href="https://github.com/AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment/graphs/contributors" target="_blank">
+  <img src="https://contrib.rocks/image?repo=AmanoShizukikun/Nagato-Sakura-Image-Quality-Assessment" />
 </a>

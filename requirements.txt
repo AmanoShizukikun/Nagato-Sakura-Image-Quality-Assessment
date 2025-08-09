@@ -1,5 +1,7 @@
-torch
-torchvision
+PyQt6
 Pillow
+numpy
 scikit-learn
+tqdm
+matplotlib
 py-cpuinfo
